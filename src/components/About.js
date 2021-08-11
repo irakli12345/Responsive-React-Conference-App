@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function About() {
   return (
     <div>
@@ -5,7 +7,7 @@ function About() {
       <p>Description</p>
       <p>Date</p>
       <p>Location</p>
-      <a href="/">Back to homepage</a>
+      <Link to="/">Go back to homepage </Link>
     </div>
   );
 }
