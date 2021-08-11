@@ -5,6 +5,7 @@ function About() {
       <p>Description</p>
       <p>Date</p>
       <p>Location</p>
+      <a href="/">Back to homepage</a>
     </div>
   );
 }
