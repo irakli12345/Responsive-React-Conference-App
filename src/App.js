@@ -4,6 +4,8 @@ import Menu from "./components/Menu";
 import "./App.css";
 
 function App() {
+  const faker = require("faker");
+  console.log(faker.name.firstName());
   return (
     <Router>
       {" "}
