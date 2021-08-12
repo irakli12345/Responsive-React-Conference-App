@@ -5,6 +5,7 @@ import TextLogo from "./components/TextLogo";
 import About from "./components/About";
 import CodeOfConduct from "./components/CodeOfConduct";
 import Accomodation from "./components/Accomodation";
+import Homepage from "./components/Homepage";
 import "./App.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         </div>
         <div className="body">
           {" "}
+          <Route path="/" exact component={Homepage} />
           <Route path="/about" exact component={About} />
           <Route path="/codeofconduct" exact component={CodeOfConduct} />
           <Route path="/accomodation" exact component={Accomodation} />

@@ -36,3 +36,8 @@ html {
 .primaryMenu > *:hover {
   border-bottom: 2px solid #f7d002;
 }
+.mainText {
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem;
+}
