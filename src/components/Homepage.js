@@ -1,11 +1,10 @@
 function Homepage() {
   return (
-    <div>
-      {" "}
-      <img
-        class="header-img"
-        src="https://cdn.pixabay.com/photo/2017/08/10/08/47/laptop-2620118_960_720.jpg"
-      ></img>
+    <div class="home">
+      <h1 id="tagline">Level Up Your React</h1>
+      <input type="text"></input>
+      <input type="select"></input>
+      <button>Buy a Ticket</button>
     </div>
   );
 }
