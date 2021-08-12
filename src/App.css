@@ -6,14 +6,15 @@ html {
 *:after {
   box-sizing: inherit;
 }
+h1 {
+  margin: 0;
+}
 .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   max-height: 15%;
-  background-color: #4549ee;
-  color: white;
 }
 /* for small screens make Header text much smaller, depending on width of the screen 
 */
@@ -26,17 +27,26 @@ html {
 /* for small screens like tablets keep them horizontal but increase width, for phones, stack them vertically */
 .primaryMenu > * {
   text-decoration: none;
-  color: white;
+  color: black;
   border-bottom: 2px solid transparent;
   font-size: 18px;
+  padding: 2px;
 }
+
 .primaryMenu > *:hover {
   border-bottom: 2px solid #f7d002;
 }
 .mainText {
   text-decoration: none;
+  color: black;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #4e51f8;
+  padding: 0.5em;
+}
+.mainText:hover {
   color: white;
-  margin: 0 1rem;
+  background-color: #4549ee;
+  border-radius: 1em;
 }
 .body {
   height: 300px;
