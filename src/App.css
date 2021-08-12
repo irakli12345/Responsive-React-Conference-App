@@ -6,7 +6,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
 .top {
   display: flex;
   justify-content: space-between;
@@ -16,15 +15,13 @@ html {
   background-color: #4549ee;
   color: white;
 }
-.top > * {
-  margin: 1rem;
-}
 /* for small screens make Header text much smaller, depending on width of the screen 
 */
 .primaryMenu {
   width: 30%;
   display: flex;
   justify-content: space-between;
+  margin: 1rem;
 }
 /* for small screens like tablets keep them horizontal but increase width, for phones, stack them vertically */
 .primaryMenu > * {
@@ -40,4 +37,10 @@ html {
   text-decoration: none;
   color: white;
   margin: 0 1rem;
+}
+.header-img {
+  object-fit: cover;
+  height: 400px;
+  width: 80%;
+  margin: auto;
 }
