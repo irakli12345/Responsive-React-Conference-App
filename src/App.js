@@ -21,9 +21,9 @@ function App() {
         </div>
         <div className="body">
           {" "}
-          <Route path="/about" component={About} />
-          <Route path="/codeofconduct" component={CodeOfConduct} />
-          <Route path="/accomodation" component={Accomodation} />
+          <Route path="/about" exact component={About} />
+          <Route path="/codeofconduct" exact component={CodeOfConduct} />
+          <Route path="/accomodation" exact component={Accomodation} />
         </div>
       </div>
     </Router>
