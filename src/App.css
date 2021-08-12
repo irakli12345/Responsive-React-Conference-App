@@ -39,7 +39,6 @@ html {
   margin: 0 1rem;
 }
 .body {
-  border: 2px solid black;
   height: 300px;
   max-width: 80%;
   margin: 2rem auto;
@@ -50,7 +49,7 @@ html {
 .home > * {
   width: 30%;
   display: block;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 .button {
   background-color: transparent;
@@ -77,4 +76,20 @@ html {
   background-color: #ffff;
   color: #4549ee;
   border: 2px solid #4549ee;
+}
+input[type="text"] {
+  padding: 0.5rem;
+  border: 0;
+  border-bottom: 2px solid #4549ee;
+  font-family: inherit;
+}
+select {
+  padding: 0.5rem;
+  border: 0;
+  border-bottom: 2px solid #4549ee;
+  font-family: inherit;
+}
+input:focus,
+select:focus {
+  outline: none;
 }

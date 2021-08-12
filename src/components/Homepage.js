@@ -1,17 +1,14 @@
 function Homepage() {
   return (
-    <div class="home">
+    <div className="home">
       <h1 id="tagline">Level Up Your React</h1>
-      <label class="custom-field">
-        {" "}
-        <span className="placeholder">Enter your name</span>
-        <input type="text"></input>
-      </label>
-      <label class="custom-field">
-        {" "}
-        <span className="placeholder">Select the Date</span>
-        <select></select>
-      </label>
+      <input type="text" placeholder="Enter Your Name"></input>
+      <select>
+        <option selected>Choose the date</option>
+        <option>14th of August</option>
+        <option>15th of August</option>
+        <option>16th of August</option>
+      </select>
       <button className="button ticketButton">Buy a Ticket</button>
     </div>
   );
