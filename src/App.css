@@ -1,13 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 .top {
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   max-height: 15%;
+  background-color: #4549ee;
+  color: white;
 }
 .top > * {
   margin: 1rem;
 }
 /* for small screens make Header text much smaller, depending on width of the screen 
 */
+.primaryMenu {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+/* for small screens like tablets keep them horizontal but increase width, for phones, stack them vertically */
+.primaryMenu > * {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+  font-size: 18px;
+}
+.primaryMenu > *:hover {
+  border-bottom: 2px solid #f7d002;
+}

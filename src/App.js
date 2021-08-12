@@ -2,7 +2,9 @@ import { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Menu from "./components/Menu";
 import TextLogo from "./components/TextLogo";
-
+import About from "./components/About";
+import CodeOfConduct from "./components/CodeOfConduct";
+import Accomodation from "./components/Accomodation";
 import "./App.css";
 
 function App() {
@@ -16,6 +18,12 @@ function App() {
           {" "}
           <TextLogo></TextLogo>
           <Menu></Menu>
+        </div>
+        <div className="body">
+          {" "}
+          <Route path="/about" component={About} />
+          <Route path="/codeofconduct" component={CodeOfConduct} />
+          <Route path="/accomodation" component={Accomodation} />
         </div>
       </div>
     </Router>
