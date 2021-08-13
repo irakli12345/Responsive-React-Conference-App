@@ -34,7 +34,3 @@ const generateArray = () => {
 const data = {
   speakers: generateArray(),
 };
-
-fs.writeFile("database.JSON", JSON.stringify(data), function (err, result) {
-  if (err) console.log("error", err);
-});

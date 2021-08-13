@@ -6,6 +6,7 @@ import About from "./components/About";
 import CodeOfConduct from "./components/CodeOfConduct";
 import Accomodation from "./components/Accomodation";
 import Homepage from "./components/Homepage";
+import Speakers from "./components/Speakers";
 import "./App.css";
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
           <Route path="/about" exact component={About} />
           <Route path="/codeofconduct" exact component={CodeOfConduct} />
           <Route path="/accomodation" exact component={Accomodation} />
+        </div>
+        <div>
+          <Speakers></Speakers>
         </div>
       </div>
     </Router>
