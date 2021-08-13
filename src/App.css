@@ -47,7 +47,7 @@ h1 {
 .mainText:hover {
   color: white;
   background-color: #bf1a2f;
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 .body {
   height: 300px;
@@ -81,9 +81,7 @@ h1 {
   background-color: #3b429f;
   max-width: 15em;
 }
-.button:active {
-  background-color: #3b429f;
-}
+
 .button:hover {
   background-color: #ffff;
   color: #3b429f;

@@ -9,8 +9,6 @@ import Homepage from "./components/Homepage";
 import "./App.css";
 
 function App() {
-  const faker = require("faker");
-  console.log(faker.name.firstName());
   return (
     <Router>
       {" "}
@@ -31,5 +29,8 @@ function App() {
     </Router>
   );
 }
+/* I should be able to post Buy Ticket Data, so that it is visible in the dashboard, where I can change speakers too*/
+/* Add 4 speakers on 2 lines. On small screens, 1 speaker on a line with whitespace around it */
+/* install json-server for fake data and faker.js to generate the fake data, or do without faker*/
 
 export default App;
