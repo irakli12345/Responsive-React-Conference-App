@@ -103,3 +103,15 @@ input:focus,
 select:focus {
   outline: none;
 }
+.speakersDiv {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around; /* or between */
+}
+.speakerDiv {
+  flex-basis: auto;
+  width: 20%;
+  height: 40%;
+  border: 2px solid red;
+}
