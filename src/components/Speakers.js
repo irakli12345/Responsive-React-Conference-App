@@ -1,10 +1,15 @@
 import { useEffect } from "react";
-
+import Speaker from "./Speaker";
 function Spakers({ list }) {
   return (
     <div>
       {list.map((listItem) => (
-        <h1>{listItem.fullName}</h1>
+        <Speaker
+          fullName={listItem.fullName}
+          description={listItem.description}
+          image={listItem.image}
+          key={listItem.id}
+        ></Speaker>
       ))}
     </div>
   );
