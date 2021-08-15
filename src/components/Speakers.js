@@ -1,14 +1,13 @@
 import { useEffect } from "react";
 
-function Spakers() {
-  useEffect(
-    () =>
-      fetch("http://localhost:3000/speakers")
-        .then((res) => res.json())
-        .then((returnedData) => console.log(returnedData)),
-    []
+function Spakers({ list }) {
+  return (
+    <div>
+      {list.map((listItem) => (
+        <h1>{listItem.fullName}</h1>
+      ))}
+    </div>
   );
-  return <div></div>;
 }
 
 export default Spakers;

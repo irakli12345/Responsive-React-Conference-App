@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Menu from "./components/Menu";
 import TextLogo from "./components/TextLogo";
@@ -10,6 +10,14 @@ import Speakers from "./components/Speakers";
 import "./App.css";
 
 function App() {
+  const [list, setList] = useState([]);
+  useEffect(
+    () =>
+      fetch("http://localhost:3000/speakers")
+        .then((res) => res.json())
+        .then((returnedData) => setList(returnedData)),
+    []
+  );
   return (
     <Router>
       {" "}
@@ -27,12 +35,14 @@ function App() {
           <Route path="/accomodation" exact component={Accomodation} />
         </div>
         <div>
-          <Speakers></Speakers>
+          <Speakers list={list}></Speakers>
         </div>
       </div>
     </Router>
   );
 }
+
+/* Switch body to header, that would be better. and homepage component's name too, make it header. make new body out of speakers. */
 /* I should be able to post Buy Ticket Data, so that it is visible in the dashboard, where I can change speakers too*/
 /* Add 4 speakers on 2 lines. On small screens, 1 speaker on a line with whitespace around it */
 /* install json-server for fake data and faker.js to generate the fake data, or do without faker*/
