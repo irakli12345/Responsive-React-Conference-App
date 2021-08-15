@@ -18,6 +18,10 @@ h1 {
 }
 /* for small screens make Header text much smaller, depending on width of the screen 
 */
+.App {
+  height: 100vh;
+  border: 2px solid black;
+}
 .primaryMenu {
   width: 30%;
   display: flex;
@@ -52,10 +56,13 @@ h1 {
 .body {
   height: 300px;
   max-width: 80%;
-  margin: 2rem auto;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 0;
   text-align: center;
   border-radius: 1rem;
 }
+/* make switch between the two body classes*/
 .home {
 }
 .home > * {
@@ -103,15 +110,35 @@ input:focus,
 select:focus {
   outline: none;
 }
-.speakersDiv {
+.newBody {
+  width: 100%;
+  border: 2px solid red;
+  height: 500px;
+}
+/* heights will need to be adjusted when it's a small screen */
+.speakersContainer {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: space-around; /* or between */
+  height: 100%;
 }
-.speakerDiv {
+.speaker {
   flex-basis: auto;
   width: 20%;
-  height: 40%;
+  height: 50%;
   border: 2px solid red;
 }
+.head-and-img {
+  height: 60%;
+  width: 100%;
+}
+.head-and-img > img {
+  object-fit: cover;
+  width: 50%;
+  height: 60%;
+}
+.head-and-img > h1 {
+  font-size: 20px;
+}
+/* I will probably need to reduce H1 font size on smaller screens, so maybe use em to set the width and height.*/

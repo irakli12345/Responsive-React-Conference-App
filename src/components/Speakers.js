@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Speaker from "./Speaker";
 function Spakers({ list }) {
   return (
-    <div>
+    <div className="speakersContainer">
       {list.map((listItem) => (
         <Speaker
           fullName={listItem.fullName}

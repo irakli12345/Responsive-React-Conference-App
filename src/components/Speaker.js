@@ -1,6 +1,6 @@
 function Speaker({ fullName, description, image }) {
   return (
-    <div>
+    <div className="speaker">
       <div className="head-and-img">
         <h1>{fullName}</h1>
         <img src={image}></img>
