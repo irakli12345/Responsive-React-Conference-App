@@ -1,11 +1,11 @@
 function Speaker({ fullName, description, image }) {
   return (
     <div className="speaker">
-      <div className="head-and-img">
-        <h1>{fullName}</h1>
+      <div className="card-img">
         <img src={image}></img>
       </div>
-      <div className="description">
+      <div className="card-content">
+        <h1>{fullName}</h1>
         <p>{description}</p>
       </div>
     </div>
