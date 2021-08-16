@@ -20,7 +20,6 @@ h1 {
 */
 .App {
   height: 100vh;
-  border: 2px solid black;
 }
 .primaryMenu {
   width: 30%;
@@ -31,7 +30,6 @@ h1 {
 /* for small screens like tablets keep them horizontal but increase width, for phones, stack them vertically */
 .primaryMenu > * {
   text-decoration: none;
-  color: black;
   border-bottom: 2px solid #bf1a2f;
   font-size: 18px;
   padding: 4px;
@@ -43,10 +41,10 @@ h1 {
 }
 .mainText {
   text-decoration: none;
-  color: black;
   border: 2px solid transparent;
   border-bottom: 2px solid #bf1a2f;
   padding: 0.5em;
+  color: black;
 }
 .mainText:hover {
   color: white;
@@ -112,8 +110,8 @@ select:focus {
 }
 .newBody {
   width: 100%;
+  height: 800px;
   border: 2px solid red;
-  height: 500px;
 }
 /* heights will need to be adjusted when it's a small screen */
 .speakersContainer {
@@ -122,16 +120,20 @@ select:focus {
   flex-wrap: wrap;
   align-content: space-around; /* or between */
   height: 100%;
+  border: 2px solid red;
 }
 .speaker {
   flex-basis: auto;
-  width: 20%;
-  height: 50%;
-  border: 2px solid red;
+  width: 21%;
+  height: 45%;
+  background-color: #777ee7;
+  color: white;
+  border-radius: 1em;
 }
 .head-and-img {
   height: 60%;
   width: 100%;
+  text-align: center;
 }
 .head-and-img > img {
   object-fit: cover;
