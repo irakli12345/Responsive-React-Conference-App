@@ -34,9 +34,7 @@ function App() {
           <Route path="/codeofconduct" exact component={CodeOfConduct} />
           <Route path="/accomodation" exact component={Accomodation} />
         </div>
-        <div className="newBody">
-          <Speakers list={list}></Speakers>
-        </div>
+        <Speakers list={list}></Speakers>
       </div>
     </Router>
   );
