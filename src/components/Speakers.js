@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Speaker from "./Speaker";
 function Spakers({ list }) {
   return (
-    <div className="newBody">
+    <div className="body">
       <h1>The Speakers:</h1>
       <div className="speakersContainer">
         {list.map((listItem) => (

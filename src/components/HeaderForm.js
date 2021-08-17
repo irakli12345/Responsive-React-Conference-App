@@ -1,6 +1,6 @@
-function Homepage() {
+function HeaderForm() {
   return (
-    <div className="home">
+    <div className="header-form">
       <h1 id="tagline">Level Up Your React</h1>
       <input type="text" placeholder="Enter Your Name"></input>
       <select>
@@ -14,4 +14,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default HeaderForm;

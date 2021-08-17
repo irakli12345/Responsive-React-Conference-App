@@ -18,8 +18,6 @@ h1 {
   box-sizing: border-box;
   max-height: 15%;
 }
-/* for small screens make Header text much smaller, depending on width of the screen 
-*/
 .App {
   height: 100vh;
 }
@@ -29,7 +27,6 @@ h1 {
   justify-content: space-between;
   margin: 1rem;
 }
-/* for small screens like tablets keep them horizontal but increase width, for phones, stack them vertically */
 .primaryMenu > * {
   text-decoration: none;
   border-bottom: 2px solid #bf1a2f;
@@ -48,13 +45,14 @@ h1 {
   border-bottom: 2px solid #bf1a2f;
   padding: 0.5em;
   color: black;
+  font-size: 1em;
 }
 .mainText:hover {
   color: white;
   background-color: #bf1a2f;
   border-radius: 0.5em;
 }
-.body {
+.header {
   height: 300px;
   max-width: 80%;
   margin: auto;
@@ -63,10 +61,8 @@ h1 {
   text-align: center;
   border-radius: 1rem;
 }
-/* make switch between the two body classes*/
-.home {
-}
-.home > * {
+
+.header-form > * {
   width: 30%;
   display: block;
   margin: 1rem auto;
@@ -111,10 +107,10 @@ input:focus,
 select:focus {
   outline: none;
 }
-.newBody {
+.body {
   text-align: center;
 }
-.newBody > h1 {
+.body > h1 {
   margin-bottom: 1em;
 }
 /* heights will need to be adjusted when it's a small screen */
@@ -172,4 +168,8 @@ select:focus {
   width: 100%;
 }
 
-/* I will probably need to reduce H1 font size on smaller screens, so maybe use em to set the width and height.*/
+/* Responsivity measures: 
+/* on screens smaller than 360px in width (any phone screenb asically) make .mainText (or all h1) 0.6em
+make .top (the logo text and menu) flex-direction: column. and the menu itself, make it column direction
+For tablets, keep the text logo and menu horizontally, but increase their width so that they fit on one line.
+make the children of header form 70% or */
