@@ -13,6 +13,7 @@ h1 {
 }
 .top {
   display: flex;
+  flex: auto;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
@@ -22,7 +23,7 @@ h1 {
   height: 100vh;
 }
 .primaryMenu {
-  width: 30%;
+  width: 35%;
   display: flex;
   justify-content: space-between;
   margin: 1rem;
@@ -33,6 +34,9 @@ h1 {
   font-size: 18px;
   padding: 4px;
   color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .primaryMenu > *:hover {
@@ -42,15 +46,14 @@ h1 {
 .mainText {
   text-decoration: none;
   border: 2px solid transparent;
-  border-bottom: 2px solid #bf1a2f;
+  border: 2px solid black;
   padding: 0.5em;
   color: black;
   font-size: 1em;
 }
 .mainText:hover {
   color: white;
-  background-color: #bf1a2f;
-  border-radius: 0.5em;
+  background-color: black;
 }
 .header {
   height: 300px;
@@ -168,8 +171,97 @@ select:focus {
   width: 100%;
 }
 
-/* Responsivity measures: 
-/* on screens smaller than 360px in width (any phone screenb asically) make .mainText (or all h1) 0.6em
-make .top (the logo text and menu) flex-direction: column. and the menu itself, make it column direction
-For tablets, keep the text logo and menu horizontally, but increase their width so that they fit on one line.
-make the children of header form 70% or */
+/* Make it cooler:
+
+it seems too much text right now. maybe once you learn CSS animations, level up your react could have a 
+launching rocket next to it that launchs when you hover over it
+*/
+@media screen and (max-width: 290px) {
+  .header {
+    max-width: 100%;
+  }
+  .top {
+    max-height: 40%;
+  }
+  .header {
+    margin-top: 0;
+  }
+  .speaker {
+    width: 70% !important;
+    height: 11% !important;
+  }
+  .speakersContainer {
+    height: 2500px !important;
+    border: 2px solid red;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainText {
+    width: 100% !important;
+    border: 2px solid black;
+  }
+  .primaryMenu {
+    flex-direction: column;
+  }
+  .primaryMenu > * {
+    margin-top: 0.5em;
+    width: 100%;
+  }
+  .top {
+    max-height: 40%;
+  }
+  .header-form > * {
+    width: 70% !important;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .speaker {
+    width: 80% !important;
+    height: 11% !important;
+  }
+  .speakersContainer {
+    height: 3500px !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header-form {
+    width: 100%;
+  }
+  .header-form > * {
+    width: 50%;
+  }
+  .top {
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+  .top > * {
+    width: 50%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .primaryMenu {
+    width: 100%;
+    box-sizing: initial;
+  }
+  .speaker {
+    width: 33%;
+    height: 30%;
+  }
+  .speakersContainer {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .primaryMenu {
+    width: 50%;
+  }
+  .header-form > * {
+    width: 40%;
+  }
+}
