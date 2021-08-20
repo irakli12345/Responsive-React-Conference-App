@@ -1,3 +1,7 @@
+# Conference App
+
+ჩემი მთავარი მოტივაცია ამ აპლიკაციის შექმნისთვის იყო ის, რომ გამოყენებული ტექნოლოგიების (JavaScript ES6, React.js, CSS, HTML, Fetch API, json-server) პრაქტიკული გამოცდილება შემეძინა.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
